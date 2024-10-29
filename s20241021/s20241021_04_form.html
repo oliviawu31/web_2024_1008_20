@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="./getData.php">
+
+
+
+        Name
+        <!-- label =>出現的文字 -->
+        <label for="">
+            Name:
+        </label>
+        <!-- input text =>文字框 -->
+        <input type="text" name="name" id="">
+        <br>
+        <br>
+        <!-- mobile -->
+        <!-- label -->
+        <label for="">
+            Mobile:
+        </label>
+        <!-- input text -->
+        <input type="text" name="mobile" id="">
+        <br>
+        <br>
+        <label for="">
+            Price:
+        </label>
+        <!-- input text =>文字框 -->
+        <input type="number" name="number" step="0.1">
+        <br>
+        <br>
+        <label for="">
+            Birthday:
+        </label>
+        <!-- input text =>文字框 -->
+        <input type="date" name="birthday" id="">
+        <br>
+        <br>
+        <!-- input submit -->
+        <input type="submit" value="Submit">
+        <hr>
+
+        <!-- 老師教的方式(1)先列出所有input的功能  -->
+        <!-- input -->
+        <!-- input text -->
+        <!-- input number -->
+        <!-- input datetime -->
+        <!-- input radio -->
+        <!-- input checkbox -->
+        <!-- input submit -->
+        <!-- select -->
+        <!-- textarea -->
+
+        <!-- input -->
+        <!-- input text -->
+        <!-- 設value為預設顯示的字 -->
+        <p>
+            <label for="">text</label>
+            <input type="text" name="myText" id="" value="text">
+        </p>
+        <!-- input number -->
+        <p>
+            <label for="">nnumber</label>
+            <input type="number" name="myNumber" id="" value="123">
+        </p>
+        <!-- input date -->
+        <p>
+            <label for="">date</label>
+            <input type="date" name="myDate" id="" value="2024-01-01">
+        </p>
+
+        <!-- input radio 單選 *name要一樣-->
+        <p>
+            <input type="radio" name="maRadio" id="" value="light pink">
+            <label for="">pink</label>
+            <input type="radio" name="maRadio" id="" value="pink">
+            <label for="">light pink</label>
+            <input type="radio" name="maRadio" id="" value="dark pink">
+            <label for="">dark pink</label>
+        </p>
+        <!-- input checkbox 複選 *name[] -->
+        <p>
+            <input type="checkbox" name="habit[]" id="" value="book">
+            <label for="">book</label>
+            <input type="checkbox" name="habit[]" id="" value="tv">
+            <label for="">tv</label>
+            <input type="checkbox" name="habit[]" id="" value="sleep">
+            <label for="">sleep</label>
+        </p>
+
+        <!-- select /(當作input text) -->
+        <p>
+            select下拉選單
+        </p>
+        <p>
+            <!-- <input type="text" name="mySelect" id="" value="select"> -->
+            <select name="mySelect" id="">
+                <option value="amy">amy</option>
+                <option value="bob">bob</option>
+                <option value="cat">cat</option>
+            </select>
+
+        </p>
+
+        <!-- textarea -->
+        <p>
+            Textarea 多行文字
+        </p>
+        <p>
+            <textarea name="myTextarea" id="" cols="50" rows="5"></textarea>
+        </p>
+
+        <!-- input submit -->
+        <p>
+            <input type="submit" value="submit">
+        </p>
+
+    </form>
+</body>
+
+</html>
