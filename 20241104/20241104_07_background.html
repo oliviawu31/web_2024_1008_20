@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <style>
+    * {
+        box-sizing: border-box;
+        /* 乙級 丙級 或者特定大小 */
+        /* 否則網頁會失去往下滑的能力 */
+        /* overflow: hidden; */
+    }
+
     .box {
         background-image: url(./02.png);
         height: 300px;
@@ -64,6 +71,14 @@
         background-color: lightcoral;
         background-position: center bottom;
     }
+
+    .box-img {
+        /* 固定地方隱藏 */
+        overflow: hidden;
+        width: 300px;
+        height: 300px;
+        background-color: aquamarine;
+    }
 </style>
 
 
@@ -103,7 +118,14 @@
 
     <hr>
     <h3>中下</h3>
+    <!-- .div -->
     <div class="box6 box"></div>
+
+    <hr>
+    <h3>box img</h3>
+    <div class="box-img">
+        <img src="./02.png" alt="">
+    </div>
 
 
 </body>
