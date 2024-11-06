@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 25vh;
+            background-color: lightgrey;
+        }
+
+        .box2 {
+            float: left;
+            width: 50%;
+            background-color: lightblue;
+        }
+
+        .box3 {
+            float: right;
+            width: 50%;
+            background-color: lightpink;
+        }
+
+        /* float的寬度只能總和小於100% */
+        .box4 {
+            float: right;
+            width: 33.5%;
+            background-color: rgb(199, 120, 132);
+        }
+
+        .box5 {
+            float: right;
+            width: 33.5%;
+            background-color: rgb(173, 88, 100);
+        }
+
+        .box6 {
+            float: left;
+            width: 50%;
+            background-color: rgb(158, 48, 65);
+        }
+
+        .container {
+            /* clear: left;
+            clear: right; */
+            /* 用清除both比較方便 */
+            clear: both
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 用table的方式來整理 -->
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <div class="container1 container">
+        <div class="box1 box">
+        </div>
+    </div>
+
+    <div class="container2 container">
+        <div class="box2 box">
+
+        </div>
+        <div class="box3 box">
+
+        </div>
+    </div>
+
+    <div class="container3 container">
+        <div class="box4 box">
+
+        </div>
+        <div class="box5 box">
+
+        </div>
+        <div class="box6 box">
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
