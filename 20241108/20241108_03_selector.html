@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* 後代的下一層 */
-        div+p {
+        div~p {
             background-color: lightgray;
         }
     </style>
@@ -22,13 +21,12 @@
     <div>
         <p>p1 Lorem ipsum dolor sit amet.</p>
         <p>p2 Lorem ipsum dolor sit amet.</p>
-        <main>
-            <p>p3 Lorem ipsum dolor sit amet.</p>
-        </main>
-        <p>p4 Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>p3 Lorem ipsum dolor sit amet.</p>
+    <p>p4 Lorem ipsum dolor sit amet.</p>
+    <div>
     </div>
     <p>p5 Lorem ipsum dolor sit amet.</p>
-
 
 
 </body>
