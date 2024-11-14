@@ -8,12 +8,16 @@
     <style>
         .menu {
             width: 50%;
-            height: 15vh;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 5vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-size: 30px;
             background-color: lightpink;
             margin: auto;
             border-radius: 40px;
+            text-align: center;
+            font-weight: 90;
+            padding-top: 10px;
+            color: rgb(151, 79, 51);
 
         }
 
@@ -22,33 +26,26 @@
             display: flex;
             flex-wrap: wrap;
             width: 50%;
-            height: 80vh;
+            height: 90vh;
             background-color: lightblue;
             border-radius: 30px;
-            background-image: url('./20241112/Beige\ Illustration\ Cake\ Shop\ Member\ Rewards\ Poster.png');
+            background-image: url('./Beige\ Illustration\ Cake\ Shop\ Member\ Rewards\ Poster.png');
             background-size: cover;
-            background-position-y: 75%;
+            background-position-y: 55%;
         }
 
-        /* table {
-            width: 25%;
-            height: 5vh;
-            background-color: lightgray;
-        } */
 
         .item1,
         .item2,
         .item3 {
             margin: 30px;
             width: 25%;
-            height: 25vh;
+            height: 20vh;
             background-color: lightgray;
             background-size: cover;
             background-position: center center;
             border-radius: 50px;
         }
-
-
 
         .item1 {
             background-image: url(https://i.pinimg.com/564x/51/df/b7/51dfb75b88476c45a50a82906a046c00.jpg);
@@ -67,34 +64,95 @@
 
 
         }
+
+        .name {
+            margin-left: 10px;
+            margin-top: 90px;
+            color: rgb(151, 79, 51);
+            font-size: 22px;
+
+        }
+
+
+        .price {
+            margin-top: 95px;
+            color: rgb(151, 79, 51);
+        }
+
+        .price1 {
+            margin-left: 40px;
+
+        }
+
+        .price2 {
+            margin-left: 70px;
+
+        }
+
+        .price3 {
+            margin-left: 30px;
+
+        }
+
+
+        .input {
+            margin-left: 20px;
+            margin-top: 95px;
+            color: rgb(151, 79, 51);
+        }
+
+        .total {
+            margin-left: 20px;
+            margin-top: 95px;
+            color: rgb(151, 79, 51);
+        }
+
+        .submit {
+            margin-left: 15px;
+            margin-top: 155px;
+
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="menu">
-        menu
+    <div class="menu">Menu
     </div>
-
 
     <div class="container">
-
-
-
-        <div class="item1">
-
+        <!-- 第一個品項 -->
+        <div class="item item1"></div>
+        <div class="name">Popcorn</div>
+        <div class="price price1">NT$120</div>
+        <div class="box input">
+            <input type="number" name="popcorn" id="popcorn" value="2">
         </div>
-
-        <div class="item2">
-
+        <div class="box total">NT$240</div>
+        <!-- 第二個品項 -->
+        <div class="item item2"></div>
+        <div class="name">Cake</div>
+        <div class="price price2">NT$220</div>
+        <div class="box input">
+            <input type="number" name="cake" id="cake" value="2">
         </div>
-        <div class="item3">
+        <div class="box total">NT$440</div>
 
+        <!-- 第三個品項 -->
+        <div class="item item3"></div>
+        <div class="name">Doughnut</div>
+        <div class="price price3">NT$80</div>
+        <div class="box input">
+            <input type="number" name="doughnut" id="doughnut" value="3">
         </div>
+        <div class="box total">NT$240</div>
 
+
+        <div>
+            <input class="submit" type="submit" value="確定">
+        </div>
 
     </div>
-
 
 
 </body>
